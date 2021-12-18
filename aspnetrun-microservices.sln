@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetrun-microservices", "aspnetrun-microservices\aspnetrun-microservices.csproj", "{FD409978-FB53-4E24-8741-2C341365BE89}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FB3DB971-00C3-4DCF-B6FA-40A7F02675B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{2D7E2B48-1851-46D4-B862-0BCAEB502FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{DAE387E7-F7AF-4425-96B8-E9ADE5291E92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +15,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD409978-FB53-4E24-8741-2C341365BE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD409978-FB53-4E24-8741-2C341365BE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD409978-FB53-4E24-8741-2C341365BE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD409978-FB53-4E24-8741-2C341365BE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE387E7-F7AF-4425-96B8-E9ADE5291E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE387E7-F7AF-4425-96B8-E9ADE5291E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE387E7-F7AF-4425-96B8-E9ADE5291E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE387E7-F7AF-4425-96B8-E9ADE5291E92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD22BF01-49FF-4950-B516-7BB5D5C8157D}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D7E2B48-1851-46D4-B862-0BCAEB502FAC} = {FB3DB971-00C3-4DCF-B6FA-40A7F02675B6}
+		{DAE387E7-F7AF-4425-96B8-E9ADE5291E92} = {2D7E2B48-1851-46D4-B862-0BCAEB502FAC}
 	EndGlobalSection
 EndGlobal
